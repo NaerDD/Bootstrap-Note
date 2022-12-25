@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>常用样式</title>
+  <link rel="stylesheet" href="bootstrap-dist/css/bootstrap.min.css">
+</head>
+<body>
+  <!-- 
+      1.列表
+        无序列表(<ul><li>...</li></ul>)
+        有序列表(<ol><li>...</li></ol>)
+        定义列表(<dl><dt>...</dt><dd>...</dd></dl>)
+      2.代码
+        1.使用<code></code>来显示单行内联代码
+        2.使用<pre></pre>来显示多行内联代码
+        样式:pre-scrollable (height,max-height高度固定,为340px,超过存在滚动条)
+        3.使用<kbd></kbd>来显示用户输入代码,入快捷键
+   -->
+   <!-- 无序列表 -->
+   <ul >
+    <li>无序项目列表一</li>
+    <li>无序项目列表二</li>
+   </ul>
+
+   <!-- 有序列表 -->
+   <ol >
+    <li>有序项目列表一</li>
+    <li>有序项目列表二</li>
+   </ol>
+   <!-- 定义列表 -->
+   <dl>
+      <dt>HTML</dt>
+      <dd>超文本标记语言</dd>
+      <dt>CSS</dt>
+      <dd>层叠样式表是一种样式语言</dd>
+   </dl>
+   <hr/>
+      <!-- 去点列表 -->
+      <ul class="list-unstyled">
+        <li>去点无序项目列表一</li>
+        <li>去点无序项目列表二</li>
+       </ul>
+       <!-- 内联列表 去掉序号+横向排列-->
+       <ul class="list-inline">
+        <li>首页</li>
+        <li>java学院</li>
+        <li>在线课堂</li>
+       </ul>
+       <!-- 自定义列表 内联列表 -->
+       <dl class="dl-horizontal">
+        <dt>HTML 超文本标记语言</dt>
+        <dd>HTML称为超文本标记语言,是一种标示性的语言</dd>
+        <dt>测试标题不能超过160px的宽度,否则2个点</dt>
+        <dd>我在写一个水平定义列表的效果,我在写一个水平定义列表的效果</dd>
+     </dl>
+     <hr><br>
+     <!-- 使用<code></code>来显示单行内联代码 -->
+     this is a simple code
+     <code>this is a simple code</code><br>
+     <code>
+      this is a simple code<br>
+      this is a simple code
+     </code>
+     <!-- 快捷键 -->
+     <p>使用<kbd>ctrl</kbd> + <kbd>s</kbd>保存内容</p>
+    <!-- 多行代码  代码保留原本的格式-->
+<pre>
+public class helloworld{
+  public static void main(String[] args){
+    System.out.println("helloworld...")
+}
+}
+</pre>
+<!-- 显示html代码需要使用字符实体 -->
+<pre>
+  &lt;h2&gt;你好&lt;/h2&gt;
+</pre>
+<!-- 当长度超过指定值,可以添加滚动条 -->
+<pre class="pre-scrollable">
+  <ol>
+    <li>...........</li>
+    <li>...........</li>
+    <li>...........</li>
+    <li>...........</li>
+    <li>...........</li>
+    <li>...........</li>
+    <li>...........</li>
+    <li>...........</li>
+    <li>...........</li>
+    <li>...........</li>
+    <li>...........</li>
+    <li>...........</li>
+  </ol>
+</pre>
+
+<hr />
+<br />
+<!-- 
+  class="table table-bordered table-hover"
+  class="active"
+  class="danger"
+  class="success"
+ -->
+<table class="table table-bordered table-striped table-hover table-condensed">
+  <tr class="info">
+    <th>JavaSE</th>
+    <th>数据库</th>
+    <th>JavaScript</th>
+  </tr>
+  <tr class="success">
+    <th>面向对象</th>
+    <th>oracle</th>
+    <th>json</th>
+  </tr>
+  <tr class="warning">
+    <th>数组</th>
+    <th>mysql</th>
+    <th>ajax</th>
+  </tr>
+  <tr class="active">
+    <th>JavaSE</th>
+    <th>数据库</th>
+    <th>JavaScript</th>
+  </tr>
+  <tr class="danger">
+    <th>面向对象</th>
+    <th>oracle</th>
+    <th>json</th>
+  </tr>
+  <tr>
+    <th>数组</th>
+    <th>mysql</th>
+    <th>ajax</th>
+  </tr>
+
+</table>
+
+</body>
+</html>

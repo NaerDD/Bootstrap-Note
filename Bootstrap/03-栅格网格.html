@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>栅格网格系统</title>
+  <link rel="stylesheet" href="bootstrap-dist/css/bootstrap.min.css">
+</head>
+<body>
+
+  <div style="background-color: mediumaquamarine;">4</div>
+  <div style="background-color: navajowhite;">8</div>
+  <hr/>
+
+
+ <!-- 布局容器 -->
+  <div class="container">
+    <!-- 行元素 -->
+    <div class="row">
+      <!-- 列元素 超小屏:col-xs-数值 小屏:col-sm-数值 中屏:col-md-数值 大屏:col-lg-数值 -->
+      <div class="col-md-4" style="background-color: deeppink;">4</div>
+      <div class="col-md-8" style="background-color: bisque;">8</div>
+    </div>
+
+    <hr/>
+    <!-- 列组合  col-md-4 -->
+    <div class="row">
+      <div class="col-md-1" style="background-color: blue;">1</div>
+      <div class="col-md-1" style="background-color: red;">1</div>
+      <div class="col-md-1" style="background-color: yellow;">1</div>
+      <div class="col-md-1" style="background-color: orange;">1</div>
+    </div>
+    <div class="row">
+      <div class="col-md-6" style="background-color: black;">1</div>
+      <div class="col-md-6" style="background-color: red;">1</div>
+    </div>
+    <div class="row">
+      <div class="col-md-4" style="background-color: green;">1</div>
+      <div class="col-md-4" style="background-color: pink;">1</div>
+      <div class="col-md-4" style="background-color: azure;">1</div>
+    </div>
+    <hr />
+    <!-- 列的总数不能超过12 超过会自动换行 -->
+    <div class="row">
+      <div class="col-md-4" style="background-color: burlywood;">4</div>
+      <div class="col-md-4" style="background-color: darkblue;">4</div>
+      <div class="col-md-5" style="background-color: goldenrod;">5</div>
+    </div>
+    <hr />
+    <!-- 列偏移  col-md-offset-1 -->
+    <div class="row" style="border: 1px solid;">
+      <div class="col-md-1" style="background-color: burlywood;">1</div>
+      <div class="col-md-1 col-md-offset-1"  style="background-color: darkblue;">1</div>
+      <div class="col-md-1" style="background-color: goldenrod;">1</div>
+      <div class="col-md-1 col-md-offset-7" style="background-color: slateblue;">1</div>
+    </div>
+    <hr />
+    <!-- 列排序 
+        往右push过去的位置上有元素 会被原有元素覆盖 col-md-push-1
+        往左pull过去的位置上有元素 原有元素会被覆盖 col-md-pull-1
+    -->
+    <div class="row" style="border: 1px solid;">
+      <div class="col-md-1" style="background-color: black;">1</div>
+      <div class="col-md-1 col-md-push-2"  style="background-color: blue;">1</div>
+      <div class="col-md-1 col-md-pull-1" style="background-color: green;">1</div>
+      <div class="col-md-1" style="background-color: slateblue;">1</div>
+    </div>
+    <hr />
+
+    <!-- 列嵌套 -->
+    <div class="row">
+      <!-- 列元素 超小屏:col-xs-数值 小屏:col-sm-数值 中屏:col-md-数值 大屏:col-lg-数值 -->
+      <div class="col-md-6" style="background-color: deeppink;">
+        <div class="row">
+          <div class="col-md-1" style="background-color: red;">1</div>
+          <div class="col-md-9" style="background-color: yellow;">1</div>
+          <div class="col-md-1" style="background-color: green;">1</div>
+          <div class="col-md-1" style="background-color: rebeccapurple;">1</div>
+        </div>
+      </div>
+      <div class="col-md-6" style="background-color: bisque;">6</div>
+    </div>
+
+    <hr />
+    <!-- 多设备自动切换 -->
+    <!-- 列元素 超小屏:col-xs-数值 小屏:col-sm-数值 中屏:col-md-数值 大屏:col-lg-数值 -->
+    <div class="row">
+      <div class="col-md-3 col-sm-6 col-lg-3" style="background-color: red;">1</div>
+      <div class="col-md-3 col-sm-6 col-lg-3" style="background-color: yellow;">1</div>
+      <div class="col-md-3 col-sm-6 col-lg-3" style="background-color: green;">1</div>
+      <div class="col-md-3 col-sm-6 col-lg-3" style="background-color: rebeccapurple;">1</div>
+    </div>
+
+    
+  </div>
+</body>
+</html>

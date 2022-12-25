@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>常用样式</title>
+  <link rel="stylesheet" href="bootstrap-dist/css/bootstrap.min.css">
+</head>
+<body>
+  <!-- 
+    常用样式
+      1.标题
+        bootstrap对h1-h6的标题效果进行覆盖
+        提供了对应的样式类名,为非标题元素设置样式  h1-h6
+        副标题 small标签 或.small类名
+      2.段落
+        通过.lead 来突出强调内容 (其作用就是增大文本字号,加粗文本,而且对行高和margin也做相应的处理)
+        <small>:小号字
+        <b><strong>:加粗
+        <i><em>:斜体
+      3.强调
+          .text-muted:提示,使用浅灰色(#999)
+          .text-primary:提示,使用蓝色(#428bca)
+          .text-success:提示,使用浅绿色(#3c763d)
+          .text-info:提示,使用浅蓝色(#31708f)
+          .text-warning:提示,使用黄色(#8a6d3b)
+          .text-danger:提示,使用褐色(#94442)
+      4.对齐效果
+          Bootstrap通过定义四个类名来控制文本的对齐
+          1.text-left 左对齐
+          2.text-right 右对齐
+          3.text-center 中心对齐
+          4.text-justify  两端对齐
+        
+   -->
+   <!-- 标题 -->
+   <div class="container">
+  <h1>标题1<small>副标题</small></h1>
+  <h2>标题2<span class="small">副标题</span></h2>
+  <h3>标题3</h3>
+  <div class="h1">你好</div>
+  <hr/>
+
+  <!-- 段落 -->
+  <p>通过.lead 来突出强调内容 (其作用就是增大文本字号,加粗文本,而且对行高和margin也做相应的处理)</p>
+  <p class="lead">通过<i>.lead</i> 来突出强调<small>变小</small>内容 (其作用就是<strong>增大</strong>文本字号,<b>加粗</b>文本,而且对行高和margin也做<em><b>相应</b></em>的处理)</p>
+  <hr/>
+
+  <!-- 强调 -->
+  <div class="text-muted lead">.text-muted:提示,使用浅灰色(#999)</div>
+  <div class="text-primary lead">.text-primary:提示,使用蓝色(#428bca)</div>
+  <div class="text-success lead">.text-success:提示,使用浅绿色(#3c763d)</div>
+  <div class="text-info lead">.text-info:提示,使用浅蓝色(#31708f)</div>
+  <div class="text-warning lead">.text-warning:提示,使用黄色(#8a6d3b)</div>
+  <div class="text-danger lead">.text-danger:提示,使用褐色(#94442)</div>
+  <hr/>
+
+  <!-- 对齐效果 -->
+  <p style="text-align: right;">Bootstrap通过定义四个类名来控制文本的对齐</p>
+  <p class="text-left">Bootstrap通过定义四个类名来控制文本的对齐</p>
+  <p class="text-right">Bootstrap通过定义四个类名来控制文本的对齐</p>
+  <p class="text-center">Bootstrap通过定义四个类名来控制文本的对齐</p>
+  <!-- 两端对齐 -->
+  <p class="text-justify">
+    Hello Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae excepturi reprehenderit placeat similique quisquam maiores explicabo corrupti, illo mollitia. Hic inventore 
+    Hi Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae excepturi reprehenderit placeat similique quisquam maiores explicabo corrupti, illo mollitia. Hic inventore 
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae excepturi reprehenderit placeat similique quisquam maiores explicabo corrupti, illo mollitia. Hic inventore 
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae excepturi reprehenderit placeat similique quisquam maiores explicabo corrupti, illo mollitia. Hic inventore 
+  </p>
+</div>
+
+
+  
+
+  <!-- <script src="/Bootstrap/js/jquery-3.6.1.js"></script>
+  <script src="./bootstrap-dist/js/bootstrap.min.js"></script> -->
+</body>
+</html>
