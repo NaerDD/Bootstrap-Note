@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>下拉菜单</title>
+  <link rel="stylesheet" href="bootstrap-dist/css/bootstrap.min.css">
+  <script src="/Bootstrap/js/jquery-3.6.1.js"></script>
+  <script src="./bootstrap-dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <hr>
+  <!-- 使用一个类名为dropdown 或 btn-group的div 包裹整个下拉框  向下dropdown 向上dropup-->
+  <div class="dropdown">
+    <!-- 使用button作为父菜单,使用类名:dropdown-toggle 和自定义data-toggle属性 -->
+    <button class="dropdown-toggle btn btn-default" data-toggle="dropdown">
+      喜欢频道
+      <!-- 设置下拉箭头 -->
+      <span class="caret"></span>
+    </button>
+
+    <!-- 下拉菜单项使用一个ul列表,并且定义一个类名为"dropdown-menu" -->
+    <ul class="dropdown-menu">
+      <li class="dropdown-header">---科普---</li>
+      <li><a href="https://tv.cctv.com/2022/12/21/VIDEEX2dSE67Bvb4T3GxuRBE221221.shtml?srcfrom=baidualading&event2=bdtg_pc_hkafjzpq" target = "_blank">人与自然</a></li>
+
+      <!-- 分组分割线：<li>添加类名“divider”来实现添加下拉分割线的功能 -->
+        <li class="divider"></li>
+
+      <li class="dropdown-header">---搞笑---</li>
+      <li class="active"><a href="https://tv.cctv.com/2022/12/21/VIDEEX2dSE67Bvb4T3GxuRBE221221.shtml?srcfrom=baidualading&event2=bdtg_pc_hkafjzpq" target = "_blank">人与自然</a></li>
+      <li class="disabled"><a href="https://tv.cctv.com/2022/12/21/VIDEEX2dSE67Bvb4T3GxuRBE221221.shtml?srcfrom=baidualading&event2=bdtg_pc_hkafjzpq" target = "_blank">欢乐喜剧人</a></li>
+      <li><a href="https://tv.cctv.com/2022/12/21/VIDEEX2dSE67Bvb4T3GxuRBE221221.shtml?srcfrom=baidualading&event2=bdtg_pc_hkafjzpq" target = "_blank" >生活大爆炸</a></li>
+
+      <!-- 分组分割线：<li>添加类名“divider”来实现添加下拉分割线的功能 -->
+        <li class="divider"></li>
+
+
+    </ul>
+
+  </div>
+</div>
+
+  
+</body>
+</html>
